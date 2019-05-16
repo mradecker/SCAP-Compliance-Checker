@@ -1,0 +1,56 @@
+---
+
+- name: Change permissions for SCAP results path
+  file:
+    path: /opt/scc/Results/Results/
+    owner: sysadmin
+    group: sysadmin
+    mode: 0755
+    recurse: yes
+
+- name: Get the timestamped directory for the results
+  shell: find /opt/scc/Results/Results -name SCAP
+  become: yes
+  register: results_directory
+
+- name: Rename All-Settings HTML Report
+  shell: "mv {{ results_directory.stdout }}/*_All-Settings_RHEL_7_STIG-002.003.html /tmp/All-Settings.html"
+  become: yes
+
+- name: Rename Non-Compliance HTML Report
+  shell: "mv {{ results_directory.stdout}}/*_Non-Compliance_RHEL_7_STIG-002.003.html /tmp/Non-Compliance.html"
+  become: yes
+
+- name: Rename XCCDF-Results file
+  shell: "mv {{ results_directory.stdout }}/XML/*_XCCDF-Results_RHEL_7_STIG-002.003.xml /tmp/XCCDF-Results.xml"
+  become: yes
+
+- name: Create location for scan results on local system
+  file:
+    path: "/opt/scc-results/"
+    state: directory
+    mode: "0755"
+    group: root
+    owner: sysadmin
+
+
+- name: Fetch XML scan results from nodes
+  fetch:
+    src: "/tmp/XCCDF-Results.xml"
+    dest: "/opt/scc-results/{{ inventory_hostname }}/XCCDF-results.xml"
+    flat: yes
+  become: yes
+
+- name: Fetch All-Settings HTML report from nodes
+  fetch:
+    src: "/tmp/All-Settings.html"
+    dest: "/opt/scc-results/{{ inventory_hostname }}/All-Settings.html"
+    flat: yes
+  become: yes
+
+- name: Fetch Non-Compliance HTML report from nodes
+  fetch:
+    src: "/tmp/Non-Compliance.html"
+    dest: "/opt/scc-results/{{ inventory_hostname }}/Non-Compliance.html"
+    flat: yes
+  become: yes

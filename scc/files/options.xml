@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<options>
+
+      <!-- ******************************************************************************* -->
+      <!--   This file is created by and frequently overwritten by the SCC Application.  * -->
+      <!--                     Manual editing is not recommended.                        * -->
+      <!-- ******************************************************************************* -->
+      <!-- *********** General Scanning Options ***************** -->
+      <scapScan>1</scapScan>
+      <ovalScan>1</ovalScan>
+      <ocilScan>1</ocilScan>
+      <reviewType>local</reviewType>
+      <offlineConfigPath></offlineConfigPath>
+      <!-- *********** Remote Scanning Options (Windows Only) ***************** -->
+      <hostName></hostName>
+      <hostFile></hostFile>
+      <remoteWMIEnabled>1</remoteWMIEnabled>
+      <!-- *********** SCAP Processing Options ***************** -->
+      <ignoreCPEOVALResults>0</ignoreCPEOVALResults>
+      <downloadExternalFiles>1</downloadExternalFiles>
+      <forceOVAL510>0</forceOVAL510>
+      <!-- *********** OVAL Processing Options ***************** -->
+      <ignoreRemoteFileSystems>1</ignoreRemoteFileSystems>
+      <ignoreCase>0</ignoreCase>
+      <itemCreationThresholdEnabled>1</itemCreationThresholdEnabled>
+      <itemCreationThreshold>50000</itemCreationThreshold>
+      <!-- *********** OVAL Processing Options (UNIX Only) ***************** -->
+      <maskPasswords>1</maskPasswords>
+      <useGetpwent>0</useGetpwent>
+      <ignoreFileExtendedACL>1</ignoreFileExtendedACL>
+      <!-- *********** OVAL Processing Options (Windows Only) ***************** -->
+      <onlyCollectSecurityPrinciplesThatHavePrivilegesAssigned>0</onlyCollectSecurityPrinciplesThatHavePrivilegesAssigned>
+      <windowsRegistryUserAge>30</windowsRegistryUserAge>
+      <!-- *********** Scan Reporting Options ***************** -->
+      <allSettingsHTMLReport>1</allSettingsHTMLReport>
+      <allSettingsTextReport>0</allSettingsTextReport>
+      <nonComplianceHTMLReport>1</nonComplianceHTMLReport>
+      <nonComplianceTextReport>0</nonComplianceTextReport>
+      <allSettingsSummaryHTMLReport>0</allSettingsSummaryHTMLReport>
+      <allSettingsSummaryTextReport>0</allSettingsSummaryTextReport>
+      <nonComplianceSummaryHTMLReport>0</nonComplianceSummaryHTMLReport>
+      <nonComplianceSummaryTextReport>0</nonComplianceSummaryTextReport>
+      <!-- *********** XML Results Options ***************** -->
+      <keepXCCDFXML>1</keepXCCDFXML>
+      <keepOVALXML>0</keepOVALXML>
+      <keepOCILXML>1</keepOCILXML>
+      <keepARFXML>1</keepARFXML>
+      <keepCPEXML>0</keepCPEXML>
+      <!-- *********** Summary Viewer Options ***************** -->
+      <enableSummaryViewer>1</enableSummaryViewer>
+      <summaryViewerMaxReports>50000</summaryViewerMaxReports>
+      <summaryViewerSort1>Session</summaryViewerSort1>
+      <summaryViewerSort2>Stream</summaryViewerSort2>
+      <summaryViewerSort3>Host</summaryViewerSort3>
+      <!-- *********** Logging Options ***************** -->
+      <keepScreenLogs>0</keepScreenLogs>
+      <debugEnabled>0</debugEnabled>
+      <suppress_warnings>0</suppress_warnings>
+      <!-- *********** Output Options ***************** -->
+      <sharedOptions>1</sharedOptions>
+      <userDataDirectory>/home/sysadmin/SCC</userDataDirectory>
+      <userDataDirectoryValue>2</userDataDirectoryValue>
+      <setRestrictedPermissions>1</setRestrictedPermissions>
+      <!-- *********** Output Subdirectory Options ***************** -->
+      <dirResultsLogsEnabled>1</dirResultsLogsEnabled>
+      <dirTargetNameEnabled>0</dirTargetNameEnabled>
+      <dirXMLEnabled>1</dirXMLEnabled>
+      <dirStreamNameEnabled>0</dirStreamNameEnabled>
+      <dirContentTypeEnabled>1</dirContentTypeEnabled>
+      <dirTimestampEnabled>1</dirTimestampEnabled>
+      <!-- *********** Output Filename Options ***************** -->
+      <fileTargetNameEnabled>1</fileTargetNameEnabled>
+      <fileSCCVersionEnabled>1</fileSCCVersionEnabled>
+      <fileContentVersionEnabled>1</fileContentVersionEnabled>
+      <fileTimestampEnabled>1</fileTimestampEnabled>
+      <!-- *********** XML Validation Options ***************** -->
+      <contentDevModeSkipValidation>0</contentDevModeSkipValidation>
+      <validateContent>0</validateContent>
+      <validateContentOnInstall>1</validateContentOnInstall>
+      <validateDigitalSignature>1</validateDigitalSignature>
+      <failOnXMLDSig>0</failOnXMLDSig>
+      <validateXMLResults>0</validateXMLResults>
+      <!-- *********** SSH Result File Transfer Options ***************** -->
+      <sshEnabled>0</sshEnabled>
+      <deleteOnTransferReports>0</deleteOnTransferReports>
+      <htmlReportTransfer>1</htmlReportTransfer>
+      <xmlReportTransfer>1</xmlReportTransfer>
+      <textReportTransfer>0</textReportTransfer>
+      <debugLogTransfer>0</debugLogTransfer>
+      <errorLogTransfer>1</errorLogTransfer>
+      <sshServer></sshServer>
+      <sshPortNumber>22</sshPortNumber>
+      <sshConnectionType>1</sshConnectionType>
+      <username></username>
+      <sshUserPassword></sshUserPassword>
+      <sshPrivateKey></sshPrivateKey>
+      <sshUserKeyFile></sshUserKeyFile>
+      <sshKeyPassphrase></sshKeyPassphrase>
+      <sshServerDirectory></sshServerDirectory>
+      <deleteonTransferLogs>0</deleteonTransferLogs>
+      <!-- *********** Post Scan SCAP Summary Reporting Options ***************** -->
+      <summarySourceDirectory></summarySourceDirectory>
+      <summaryDestinationDirectory></summaryDestinationDirectory>
+      <openSummaryDestinationDirectory>1</openSummaryDestinationDirectory>
+      <computerListHistoricalHTMLReport>1</computerListHistoricalHTMLReport>
+      <computerListHistoricalExcelReport>1</computerListHistoricalExcelReport>
+      <computerListHTMLReport>1</computerListHTMLReport>
+      <computerListExcelReport>1</computerListExcelReport>
+      <siteSummaryHTMLReport>1</siteSummaryHTMLReport>
+      <siteSummaryNonComplianceHTMLReport>1</siteSummaryNonComplianceHTMLReport>
+      <siteSummaryExcelReport>1</siteSummaryExcelReport>
+      <siteSummaryNonComplianceExcelReport>1</siteSummaryNonComplianceExcelReport>
+      <!-- *********** Post Scan SCAP Detailed Reporting Options ***************** -->
+      <detailSummarySourceDirectory></detailSummarySourceDirectory>
+      <detailSummaryDestinationDirectory></detailSummaryDestinationDirectory>
+      <openDetailSummaryDestinationDirectory>1</openDetailSummaryDestinationDirectory>
+      <!-- *********** Post Scan OVAL Detailed Reporting Options ***************** -->
+      <detailSummaryOVALSourceDirectory></detailSummaryOVALSourceDirectory>
+      <detailSummaryOVALDestinationDirectory></detailSummaryOVALDestinationDirectory>
+      <openDetailSummaryOVALDestinationDirectory>1</openDetailSummaryOVALDestinationDirectory>
+      <!-- *********** Post Scan SCAP/OVAL Shared Report Generation Options ***************** -->
+      <allSettingsHTMLReportDetailSummary>1</allSettingsHTMLReportDetailSummary>
+      <allSettingsTextReportDetailSummary>0</allSettingsTextReportDetailSummary>
+      <nonComplianceHTMLReportDetailSummary>1</nonComplianceHTMLReportDetailSummary>
+      <nonComplianceTextReportDetailSummary>0</nonComplianceTextReportDetailSummary>
+      <allSettingsSummaryHTMLReportDetailSummary>0</allSettingsSummaryHTMLReportDetailSummary>
+      <allSettingsSummaryTextReportDetailSummary>0</allSettingsSummaryTextReportDetailSummary>
+      <nonComplianceSummaryHTMLReportDetailSummary>0</nonComplianceSummaryHTMLReportDetailSummary>
+      <nonComplianceSummaryTextReportDetailSummary>0</nonComplianceSummaryTextReportDetailSummary>
+      <!-- *********** Deviation Options ***************** -->
+      <deviationsEnabled>1</deviationsEnabled>
+      <deviationsProfile>default</deviationsProfile>
+      <!-- *********** Threshold Options ***************** -->
+      <thresholdsEnabled>1</thresholdsEnabled>
+      <thresholdsProfile>default</thresholdsProfile>
+      <thresholdsUnlockCode></thresholdsUnlockCode>
+      <!-- *********** SCC Service Options (Windows Only) ***************** -->
+      <frequency>2</frequency>
+      <schedule>12</schedule>
+      <randomizeSSHTransfer>0</randomizeSSHTransfer>
+      <randomizeValue>300</randomizeValue>
+      <timeout>86400</timeout>
+      <lastServiceScan>0</lastServiceScan>
+      <nextServiceScan>0</nextServiceScan>
+      <!-- *********** Developer Options: (Remote WMI) ***************** -->
+      <remoteRefreshDelay>1</remoteRefreshDelay>
+      <remoteMaxThreads>25</remoteMaxThreads>
+      <remoteMaxThreads32>5</remoteMaxThreads32>
+      <!-- *********** Developer Options: (Logging) ***************** -->
+      <debugExcludeDateTime>0</debugExcludeDateTime>
+      <debugTraceEnabled>0</debugTraceEnabled>
+      <maxLogFileSize>20</maxLogFileSize>
+      <!-- *********** Developer Options: (Misc Thresholds) ***************** -->
+      <maximumRecentReports>24</maximumRecentReports>
+      <freeSpaceThreshold>100</freeSpaceThreshold>
+      <validationThreshold>15</validationThreshold>
+      <patchFileModifiedThreshold>60</patchFileModifiedThreshold>
+      <externalCmdTimeout>60</externalCmdTimeout>
+      <!-- *********** Developer Options: (Standalone OVAL Content Updates) ***************** -->
+      <ovalFileModifiedThresholdOC>7</ovalFileModifiedThresholdOC>
+      <useInternetOC>0</useInternetOC>
+      <useIntranetOC>0</useIntranetOC>
+      <intranetURLoneOC></intranetURLoneOC>
+      <intranetURLtwoOC></intranetURLtwoOC>
+      <internetURLoneOC></internetURLoneOC>
+      <internetURLtwoOC></internetURLtwoOC>
+      <!-- *********** Internal Options - Do Not Edit ***************** -->
+      <version>5.1</version>
+      <timeStamp>2019-02-14T17:45:34</timeStamp>
+      <expignore>0</expignore>
+      <domainName></domainName>
+      <createNewHostFile>0</createNewHostFile>
+      <scap12DBFilepath>Resources/DB/SCC_SCAP12_Content.db</scap12DBFilepath>
+      <iaControlDBLoaded>1</iaControlDBLoaded>
+      <iaControlDBFilepath>Resources/DB/SCC_IA_Control_Mappings.db</iaControlDBFilepath>
+      <nvdcceFile>nvdcce-0.1-feed.xml</nvdcceFile>
+      <cciFile>U_CCI_List.xml</cciFile>
+      <!-- *********** SCAP 1.0 Patch Content Update (soon to be obsolete) Options ***************** -->
+      <useIntranet>0</useIntranet>
+      <patchContentAgeWarning>60</patchContentAgeWarning>
+      <intranetURLone></intranetURLone>
+      <intranetURLtwo></intranetURLtwo>
+      <useInternet>0</useInternet>
+      <!-- *********** Cyberscope (soon to be obsolete) Options ***************** -->
+      <cyberscopeOrgName></cyberscopeOrgName>
+      <cyberscopeDepartment></cyberscopeDepartment>
+      <cyberscopeEnclave></cyberscopeEnclave>
+      <cyberscopeSummaryId>FISMA_auto_feed_fy10</cyberscopeSummaryId>
+      <cyberscopeSummaryVersion>1.0beta1</cyberscopeSummaryVersion>
+      <xccdfFileAgeWarning>45</xccdfFileAgeWarning>
+      <xccdfFileAgeAction>Warn</xccdfFileAgeAction>
+      <suppressCceErrors></suppressCceErrors>
+      <cyberscopeOrgPhone></cyberscopeOrgPhone>
+      <cyberscopeOrgURL></cyberscopeOrgURL>
+      <cyberscopeOrgEmail></cyberscopeOrgEmail>
+      <cyberscopeReport></cyberscopeReport>
+      <contents>
+            <content>
+                  <stream>scap_mil.disa.stig_datastream_U_Red_Hat_Enterprise_Linux_7_V2R2_STIG_SCAP_1-2_Benchmark</stream>
+                  <benchmarkID>RHEL_7_STIG</benchmarkID>
+                  <releaseInfo>Release: 2.2 Benchmark Date: 25 Jan 2019</releaseInfo>
+                  <scapVersion>1.2</scapVersion>
+                  <filepath>Resources/Content/SCAP12_Content/U_Red_Hat_Enterprise_Linux_7_V2R2_STIG_SCAP_1-2_Benchmark.xml</filepath>
+                  <selectedProfile>xccdf_mil.disa.stig_profile_MAC-1_Classified</selectedProfile>
+                  <profiles>
+                        <profile>no_profile_selected</profile>
+                        <profile>xccdf_mil.disa.stig_profile_MAC-1_Classified</profile>
+                        <profile>xccdf_mil.disa.stig_profile_MAC-1_Public</profile>
+                        <profile>xccdf_mil.disa.stig_profile_MAC-1_Sensitive</profile>
+                        <profile>xccdf_mil.disa.stig_profile_MAC-2_Classified</profile>
+                        <profile>xccdf_mil.disa.stig_profile_MAC-2_Public</profile>
+                        <profile>xccdf_mil.disa.stig_profile_MAC-2_Sensitive</profile>
+                        <profile>xccdf_mil.disa.stig_profile_MAC-3_Classified</profile>
+                        <profile>xccdf_mil.disa.stig_profile_MAC-3_Public</profile>
+                        <profile>xccdf_mil.disa.stig_profile_MAC-3_Sensitive</profile>
+                        <profile>xccdf_mil.disa.stig_profile_CAT_I_Only</profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_MAC-1_Classified</original_profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_MAC-1_Public</original_profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_MAC-1_Sensitive</original_profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_MAC-2_Classified</original_profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_MAC-2_Public</original_profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_MAC-2_Sensitive</original_profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_MAC-3_Classified</original_profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_MAC-3_Public</original_profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_MAC-3_Sensitive</original_profile>
+                        <original_profile>xccdf_mil.disa.stig_profile_CAT_I_Only</original_profile>
+                  </profiles>
+                  <xccdfTailoringEnabled>N</xccdfTailoringEnabled>
+                  <checksumSCAP12>887863f8970e457adda8dc6a52c23c870ed1bf4f7309941e1f6f5fb31e30b2f2</checksumSCAP12>
+                  <installDate>2019-01-28</installDate>
+                  <title>Red Hat Enterprise Linux 7 Security Technical Implementation Guide</title>
+                  <platform>Red Hat Enterprise Linux 7</platform>
+                  <publisher>DISA</publisher>
+                  <description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description>
+                  <notice></notice>
+                  <status>accepted (2019-01-25)</status>
+                  <version>002.002</version>
+                  <xccdf>scap_mil.disa.stig_comp_U_Red_Hat_Enterprise_Linux_7_V2R2_STIG_SCAP_1-2_Benchmark-xccdf.xml</xccdf>
+                  <oval_components>
+                        <oval version="5.10">scap_mil.disa.stig_comp_U_Red_Hat_Enterprise_Linux_7_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml</oval>
+                  </oval_components>
+                  <date>2019-01-25</date>
+                  <xmlSchemaValidationDate>0</xmlSchemaValidationDate>
+                  <xmlSchemaValidationResult></xmlSchemaValidationResult>
+                  <xmldsigValidationDate>0</xmldsigValidationDate>
+                  <xmldsigStatus>NOT DIGITALLY SIGNED</xmldsigStatus>
+                  <enabled>1</enabled>
+                  <review>1</review>
+                  <resume>0</resume>
+                  <resumeFile></resumeFile>
+            </content>
+      </contents>
+      <ovalContents></ovalContents>
+      <ocilContents></ocilContents>
+</options>
+
+

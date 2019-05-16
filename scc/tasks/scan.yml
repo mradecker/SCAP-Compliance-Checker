@@ -1,0 +1,44 @@
+---
+
+- name: Copy SCC rpm to nodes
+  copy:
+    src: /opt/scc/{{ scc_rpm }}
+    dest: /opt/scc
+
+- name: Install SCC rpm
+  yum:
+    name: /opt/scc/{{ scc_rpm }}
+    state: present
+  become: yes
+
+- name: Copy RHEL7 benchmark
+  copy:
+    src: "{{ scc_benchmark_file }}"
+    dest: /opt/scc
+
+- name: Copy options.xml file for SCC to remote systems
+  copy:
+    src: options.xml
+    dest: "{{ scc_home_dir }}"
+    mode: "0644"
+
+- name: Clear out old results directory (if present)
+  file:
+    path: "{{ scc_results_dir }}"
+    state: absent
+
+- name: Ensure results directory exists
+  file:
+    path: "{{ scc_results_dir }}"
+    state: directory
+
+- name: Ensure all old SCC content is removed on remote machine
+  shell: "{{ scc_home_dir }}cscc -ua"
+  become: true
+
+- name: "Run SCC tool using the benchmark file (This may take up to 30 minutes)"
+  shell: "{{ scc_home_dir }}cscc -isr {{ scc_benchmark_file }} -u {{ scc_results_dir }}"
+  become: true
+  async: 1800
+  poll: 10
+  no_log: true
