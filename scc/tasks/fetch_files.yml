@@ -2,9 +2,7 @@
 
 - name: Change permissions for SCAP results path
   file:
-    path: /opt/scc/Results/Results/
-    owner: sysadmin
-    group: sysadmin
+    path: "/opt/scc/Results/Results"
     mode: 0755
     recurse: yes
 
@@ -30,9 +28,6 @@
     path: "/opt/scc-results/"
     state: directory
     mode: "0755"
-    group: root
-    owner: sysadmin
-
 
 - name: Fetch XML scan results from nodes
   fetch:
